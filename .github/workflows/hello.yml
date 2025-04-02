@@ -1,0 +1,12 @@
+name: Hello World Action
+
+on:
+  workflow_dispatch:  # Lets you trigger manually
+  push:
+    branches: [ "main" ]
+
+jobs:
+  say-hello:
+    steps:
+      - name: Print greeting
+        run: Write-Output "Hello World from Windows! 🖥️"
